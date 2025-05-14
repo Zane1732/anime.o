@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background circle -->
+  <circle cx="100" cy="100" r="95" fill="#1a0000" stroke="#500" stroke-width="5"/>
+  
+  <!-- Z letter with 3D effect -->
+  <g filter="url(#shadow)">
+    <path d="M60 55H140C142 55 144 57 143 60L137 70H85L135 140H60C58 140 56 138 57 135L63 125H115L65 55Z" fill="#cc0000"/>
+    
+    <!-- Highlight and shadow for 3D effect -->
+    <path d="M60 55H140C142 55 144 57 143 60L137 70H85L135 140H60C58 140 56 138 57 135L63 125H115L65 55Z" fill="url(#gradient)" fill-opacity="0.5"/>
+  </g>
+  
+  <!-- ANIME text -->
+  <g filter="url(#text-shadow)">
+    <text x="100" y="175" font-family="Arial, sans-serif" font-weight="900" font-size="30" fill="#cc0000" text-anchor="middle">ANIME</text>
+  </g>
+  
+  <!-- Filters for 3D effects -->
+  <defs>
+    <linearGradient id="gradient" x1="60" y1="55" x2="140" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff3333"/>
+      <stop offset="1" stop-color="#990000"/>
+    </linearGradient>
+    
+    <filter id="shadow" x="0" y="0" width="200" height="200" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#990000" flood-opacity="0.8"/>
+    </filter>
+    
+    <filter id="text-shadow" x="0" y="0" width="200" height="200" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#ff0000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+</svg>
